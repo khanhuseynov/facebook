@@ -1,103 +1,102 @@
-*{
+html{
+    height: 100%;
+}
+body{
     margin: 0;
     padding: 0;
-    text-decoration: none;
-    box-sizing: border-box;
-}
-.frm{
+    height: 100%;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e9ebee;
+}
+.center{
+    width: 408px;
+    min-height: 360px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+}
+.email{
+    width: 93%;
+    border-radius: 7px;
+    height: 50px;
+    margin-bottom: 20px;
 }
 
-.main{
-    margin-top: 10%;
-    width: 400px;
-    min-height: 300px;
-    padding: 16px 1px 22px 2px;
+.psw{
+    width: 93%;
     border-radius: 7px;
-    border: none;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 4px, rgba(0, 0, 0, 0.1) 0px 8px 16px;
+    height: 50px;
+    margin-bottom: 20px;
 }
-input[type='text'] , input[type='password']{
-    padding: 16px 100px;
-    border-radius: 5px;
-    text-align: center;
-    color: black;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 15px;
-    border: 1px solid rgb(177, 177, 177);
+
+.link{
+    text-decoration: none;
 }
-.login{
-    padding: 13px 162px;
-    border-radius: 5px;
-    text-align: center;
-    color: #ffff;
-    background-color: #166fe5;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size:17px;
-    font-weight: bold;
-    border: none;
+.eye2{
+    color: blue;
 }
-.login:hover{
-    cursor: pointer;
-    background-color: #0466e6; ;
-}
-.or{
-    color: rgb(122, 122, 122);
-}
-.or::before{
-    content: "";
-    background-color: rgb(122, 122, 122);
-    width: 40px;
-    height: 1px;
-    display: block;
+.eye{
     position: relative;
-    top: 11px;
-    right: 51px;
+    left: 163px;
+    bottom: 51px;
+    opacity: 0;
 }
-.or::after{
-    content: "";
-    background-color: rgb(123, 123, 123);
-    width: 40px;
-    height: 1px;
-    display: block;
-    position: relative;
-    top: -8px;
-    right: -31px;
-}
-.cna{
-    padding: 12px 12px;
-    border-radius: 5px;
-    text-align: center;
-    color: #ffff;
-    background-color: #42B72A;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size:17px;
-    font-weight: bold;
+.psw_button{
+    width: 210px;
+    height: 48px;
+    padding: 2px;
+    background-color: rgb(0, 169, 0);
+    font-size: 21px;
     border: none;
+    border-radius: 6px;
+
 }
-.cna:hover{
-    cursor: pointer;
-    background-color: #34b919;
+.sgn_button{
+    width: 93%;
+    border-radius: 7px;
+    height: 50px;
 }
-.fb{
-    display: flex;
-    flex-direction: column;
-    height: 400px;
-    width: 400px;
-    position: relative;
-    top: 100px;
+.logo{
+    margin: -40px -44px -67px;
 }
-.fb p{
-    font-size: 28px;
-    margin-left: 52px;
-    position: absolute;
-    top: 196px;
-}
-.center{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .logo{
+        margin: 14px 87px -32px;
+    }
+    .head_text{
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .rght{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    
 }
